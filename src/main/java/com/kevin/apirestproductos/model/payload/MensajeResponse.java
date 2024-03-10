@@ -3,7 +3,6 @@ package com.kevin.apirestproductos.model.payload;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
-
 import java.io.Serializable;
 
 @Data

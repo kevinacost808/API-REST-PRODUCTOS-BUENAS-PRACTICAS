@@ -48,7 +48,6 @@ public class ProductoController {
                 , HttpStatus.OK
         );
     }
-
     @GetMapping(value = "/producto/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> showById(@PathVariable Integer id){
         try{
@@ -90,7 +89,6 @@ public class ProductoController {
         }
 
     }
-
     @PostMapping("/producto")
     public ResponseEntity<?> saveProduct(@RequestBody ProductoDto productoDto){
         Producto productoSave = null;
@@ -122,7 +120,6 @@ public class ProductoController {
             );
         }
     }
-
     @DeleteMapping("/producto/{id}")
     public ResponseEntity<?> deleteProduct(@PathVariable Integer id){
         try {
@@ -139,7 +136,6 @@ public class ProductoController {
             );
         }
     }
-
     @PutMapping(value = "/producto/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<?> updateProduct(@RequestBody ProductoDto productoDto, @PathVariable Integer id){
         try{
